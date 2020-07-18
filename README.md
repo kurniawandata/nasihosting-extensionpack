@@ -7,6 +7,32 @@ Nasihosting Extension Pack v1.0 Beta 1
 
 Script untuk membangun hosting otomatis dari sisi client, pemilik hosting cukup tugasnya mengarahkan subdomain dari cloudflare
 
+Cara menggunakan Nasihosting-ExtensionPack
+------------------------------------------
+ExtensionPack hanya boleh dijalankan jika Nasihosting v1.1 sudah aktif dan berjalan normal di server
+1. cd /home
+2. git clone https://github.com/kurniawandata/nasihosting-extensionpack
+3. cd nasihosting-extensionpack
+4. chmod -R 777 *
+5. a2enmod cgi 
+6. service apache2 restart
+7. cp form.sh /usr/lib/cgi-bin
+8. cp submit.sh /usr/lib/cgi-bin
+9. sudo nano /etc/apache2/sites-available/000-default.conf
+10. Tambahkan baris di bawah ini dalam tag <VirtualHost></VirtualHost>, 
+
+ScriptAlias /cgi-bin/ /usr/lib/cgi-bin/
+<Directory "/usr/lib/cgi-bin"> 
+AllowOverride None
+Options +ExecCGI -MultiViews +SymLinksIfOwnerMatch 
+Order allow,deny 
+Allow from all
+</Directory>
+
+Setelah itu simpan dengan perintah ctrl+x lalu y lalu enter.
+11. service apache2 restart
+12. Untuk membuat akun http://ipserver/cgi-bin/form.sh
+
 Licensi
 -------
 GNU General Public License v3
