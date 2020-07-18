@@ -37,3 +37,4 @@ cat <<EOT
 EOT
 else
 echo "Subdomain yang anda masukkan sudah ada pemiliknya"
+fi
