@@ -26,10 +26,15 @@ ExtensionPack hanya boleh dijalankan jika Nasihosting v1.1 sudah aktif dan berja
 ScriptAlias /cgi-bin/ /usr/lib/cgi-bin/
 
 <Directory "/usr/lib/cgi-bin"> 
+
 AllowOverride None
+
 Options +ExecCGI -MultiViews +SymLinksIfOwnerMatch 
+
 Order allow,deny 
+
 Allow from all
+
 </Directory>
 
 Setelah itu simpan dengan perintah ctrl+x lalu y lalu enter.
