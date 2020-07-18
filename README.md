@@ -30,9 +30,7 @@ Allow from all
 </Directory>
 
 Setelah itu simpan dengan perintah ctrl+x lalu y lalu enter.
-
 11. service apache2 restart
-
 12. Untuk membuat akun http://ipserver/cgi-bin/form.sh
 
 Licensi
