@@ -16,10 +16,12 @@ ExtensionPack hanya boleh dijalankan jika Nasihosting v1.1 sudah aktif dan berja
 4. chmod -R 777 *
 5. a2enmod cgi 
 6. service apache2 restart
-7. cp form.sh /usr/lib/cgi-bin
-8. cp submit.sh /usr/lib/cgi-bin
-9. sudo nano /etc/apache2/sites-available/000-default.conf
-10. Tambahkan baris di bawah ini dalam tag <VirtualHost></VirtualHost>, 
+7. cp index.sh /usr/lib/cgi-bin
+8. cp run.sh /usr/lib/cgi-bin
+9. nano /usr/lib/cgi-bin/run.sh
+10. Ganti password : passwordmysql setelah itu keluar lalu simpan
+11. sudo nano /etc/apache2/sites-available/000-default.conf
+12. Tambahkan baris di bawah ini dalam tag <VirtualHost></VirtualHost>, 
 
 ScriptAlias /cgi-bin/ /usr/lib/cgi-bin/
 <Directory "/usr/lib/cgi-bin"> 
@@ -31,9 +33,8 @@ Allow from all
 
 Setelah itu simpan dengan perintah ctrl+x lalu y lalu enter.
 
-11. service apache2 restart
-
-12. Untuk membuat akun http://ipserver/cgi-bin/form.sh
+13. service apache2 restart lalu enter
+14. Untuk membuat akun http://ipserver/cgi-bin/index.sh
 
 Licensi
 -------
