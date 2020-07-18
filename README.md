@@ -24,6 +24,7 @@ ExtensionPack hanya boleh dijalankan jika Nasihosting v1.1 sudah aktif dan berja
 12. Tambahkan baris di bawah ini dalam tag <VirtualHost></VirtualHost>, 
 
 ScriptAlias /cgi-bin/ /usr/lib/cgi-bin/
+
 <Directory "/usr/lib/cgi-bin"> 
 AllowOverride None
 Options +ExecCGI -MultiViews +SymLinksIfOwnerMatch 
