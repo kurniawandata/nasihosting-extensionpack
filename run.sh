@@ -29,7 +29,7 @@ Cara ganti password edit pada bagian config.php, untuk generate password : http:
 Login phpmyadmin<br />
 Login : https://$name.nasihosting.com/phpmyadmin<br />
 Username : $name <br />
-Password : $password    <br />
+Password : $password <br />
 <br />
 Saat ini request anda tinggal diapprove oleh admin<br />
 </body>
