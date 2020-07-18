@@ -22,7 +22,7 @@ cat <<EOT
         <h2>Welcome $name </h1>
         Alamat website anda : https://$name.nasihosting.com <br />
         Login : https://$name.nasihosting.com/login.php<br />
-        Username : admin
+        Username : admin<br />
         Password : admin<br />
         Cara ganti password edit pada bagian config.php, untuk generate password : http://www.passwordtool.hu/php5-password-hash-generator<br />
         <br />
