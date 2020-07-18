@@ -21,7 +21,7 @@ ExtensionPack hanya boleh dijalankan jika Nasihosting v1.1 sudah aktif dan berja
 9. nano /usr/lib/cgi-bin/run.sh
 10. Ganti password : passwordmysql setelah itu keluar lalu simpan
 11. sudo nano /etc/apache2/sites-available/000-default.conf
-12. Tambahkan baris di bawah ini dalam tag <VirtualHost> </VirtualHost>. 
+12. Tambahkan baris di bawah ini dalam tag VirtualHost. 
 
 ScriptAlias /cgi-bin/ /usr/lib/cgi-bin/
 
