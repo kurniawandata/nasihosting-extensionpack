@@ -4,12 +4,12 @@ echo ""
 name=`echo "$QUERY_STRING" | awk '{split($0,array,"&")} END{print array[1]}' | awk '{split($0,array,"=")} END{print array[2]}'`
 password=`echo "$QUERY_STRING" | awk '{split($0,array,"&")} END{print array[2]}' | awk '{split($0,array,"=")} END{print array[2]}'`
 if [ -z "$(ls -A /home/$name/config.php)" ]; then
-mkdir -p /home/$name
+mkdir /home/$name
 cp /home/nasihosting-extensionpack/filemanager/* /home/$name
 cp /home/nasihosting-extensionpack/support/subdomain.conf /etc/apache2/sites-available/$name.conf
 sed -i "s/sample/$name/g" /etc/apache2/sites-available/$name.conf
-a2ensite $name.conf
-systemctl reload apache2
+sudo a2ensite $name.conf
+sudo systemctl reload apache2
 mysql -uroot -ppasswordmysql -e "CREATE DATABASE "$name""
 mysql -uroot -ppasswordmysql -e "GRANT ALL PRIVILEGES ON "$name".* TO "$name"@localhost IDENTIFIED BY '"$password"'"
 cat <<EOT
