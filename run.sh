@@ -8,7 +8,7 @@ mkdir -p /home/$name
 cp /home/nasihosting-extensionpack/filemanager/* /home/$name
 cp /home/nasihosting-extensionpack/support/subdomain.conf /etc/apache2/sites-available/$name.conf
 sed -i "s/sample/$name/g" /etc/apache2/sites-available/$name.conf
-a2ensite /etc/apache2/sites-available/$name.conf
+a2ensite $name.conf
 systemctl reload apache2
 mysql -uroot -ppasswordmysql -e "CREATE DATABASE "$name""
 mysql -uroot -ppasswordmysql -e "GRANT ALL PRIVILEGES ON "$name".* TO "$name"@localhost IDENTIFIED BY '"$password"'"
