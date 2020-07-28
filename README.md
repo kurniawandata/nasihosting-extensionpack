@@ -1,7 +1,7 @@
 # nasihosting-extensionpack
 
 
-Nasihosting Extension Pack v1.0 Beta 2
+Nasihosting Extension Pack v1.0 Beta 3
 --------------------
 ![alt text](http://xcode.or.id/04_small-logo.png)
 
@@ -30,6 +30,7 @@ ExtensionPack hanya boleh dijalankan jika Nasihosting v1.1 sudah aktif dan berja
 18. chmod 777 /etc/apache2/ssl
 19. service apache2 restart lalu enter
 20. Untuk membuat akun http://ipserver/cgi-bin/index.sh
+21. Untuk keamanan pastikan akun root dibuat terlebih dahulu agar password root tidak tertimpa atau dibypass
 
 Licensi
 -------
