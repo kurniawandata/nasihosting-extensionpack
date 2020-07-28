@@ -30,7 +30,7 @@ ExtensionPack hanya boleh dijalankan jika Nasihosting v1.1 sudah aktif dan berja
 18. chmod 777 /etc/apache2/ssl
 19. service apache2 restart lalu enter
 20. Untuk membuat akun http://ipserver/cgi-bin/index.sh
-21. Untuk keamanan pastikan akun root dibuat terlebih dahulu agar password root tidak tertimpa atau dibypass
+21. Untuk keamanan pastikan akun root dibuat terlebih dahulu agar password root tidak tertimpa atau dibypass, jika ada akun lain database lain punya akses seperti root pastikan juga dibuat terlebih dahulu akunnya.
 
 Licensi
 -------
