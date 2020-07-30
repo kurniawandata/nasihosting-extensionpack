@@ -6,6 +6,8 @@ password=`echo "$QUERY_STRING" | awk '{split($0,array,"&")} END{print array[2]}'
 if [ -z "$(ls -A /home/$name/config.php)" ]; then
 sudo mkdir /home/$name
 sudo cp /home/nasihosting-extensionpack/filemanager/* /home/$name
+sudo chmod 777 /home/$name
+sudo chmod 777 /home/$name/*
 cp /home/nasihosting-extensionpack/support/subdomain.conf /etc/apache2/sites-available/$name.conf
 sed -i "s/sample/$name/g" /etc/apache2/sites-available/$name.conf
 sudo a2ensite $name.conf
