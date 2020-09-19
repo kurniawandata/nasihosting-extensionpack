@@ -1,7 +1,7 @@
 # nasihosting-extensionpack
 
 
-Nasihosting Extension Pack v1.0 Beta 6
+Nasihosting Extension Pack v1.0 Beta 7
 --------------------
 ![alt text](http://xcode.or.id/04_small-logo.png)
 
