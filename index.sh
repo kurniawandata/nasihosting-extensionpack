@@ -8,7 +8,7 @@ cat <<EOT
         <title>Daftar nasihosting</title>
 </head>
 <body>
-        <p>Silahkan masukkan nama subdomain dan password</p>
+        <p>Silahkan masukkan nama subdomain dan password, password yang dimasukkan hanya mendukung huruf dan angka</p>
         <form action="run.sh" method="get">
                 <label>Nama Sub domain</label>
                 <input type="text" name="name">@nasihosting.com
