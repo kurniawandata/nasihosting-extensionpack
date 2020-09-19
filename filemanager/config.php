@@ -20,8 +20,8 @@ $use_auth = true;
 // Users: array('Username' => 'Password', 'Username2' => 'Password2', ...)
 // Generate secure password hash - https://tinyfilemanager.github.io/docs/pwd.html
 $auth_users = array(
-    'admin' => '$2y$10$XY9LEsobIAdo7XD43wgvouwiA6vzX4XVijH1tLfVaExT/YshqqEaa', //admin
-    'user' => '$2y$10$XY9LEsobIAdo7XD43wgvouwiA6vzX4XVijH1tLfVaExT/YshqqEaa' //admin
+'admin' => password_hash('unik', PASSWORD_DEFAULT), 
+'user' => password_hash('unik', PASSWORD_DEFAULT)
 );
 
 //set application theme
