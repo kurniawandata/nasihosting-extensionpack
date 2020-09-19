@@ -8,6 +8,7 @@ sudo mkdir /home/$name
 sudo cp /home/nasihosting-extensionpack/filemanager/* /home/$name
 sudo chmod 777 /home/$name
 sudo chmod 777 /home/$name/*
+sed -i "s/unik/$password/g" /home/$name/config.php
 cp /home/nasihosting-extensionpack/support/subdomain.conf /etc/apache2/sites-available/$name.conf
 sed -i "s/sample/$name/g" /etc/apache2/sites-available/$name.conf
 sudo a2ensite $name.conf
@@ -25,8 +26,8 @@ cat <<EOT
 Alamat website anda : https://$name.nasihosting.com <br />
 Login : https://$name.nasihosting.com/login.php<br />
 Username : admin<br />
-Password : admin<br />
-Cara ganti password edit pada bagian config.php, untuk generate password : http://www.passwordtool.hu/php5-password-hash-generator<br />
+Password : $password<br />
+Cara ganti password edit pada bagian config.php, cari password anda dan ganti dengan password yang baru<br />
 <br />
 Login phpmyadmin<br />
 Login : https://$name.nasihosting.com/phpmyadmin<br />
