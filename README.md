@@ -27,10 +27,11 @@ ExtensionPack hanya boleh dijalankan jika Nasihosting v1.1 sudah aktif dan berja
 15. nano /etc/sudoers, isi : www-data ALL=(ALL) NOPASSWD: ALL
 16. a2enmod ssl
 17. Buat nasihosting.com.key dan nasihosting.com.pem dengan isi yang didapat dari cloudflare
-18. chmod 777 /etc/apache2/ssl
-19. service apache2 restart lalu enter
-20. Untuk membuat akun http://ipserver/cgi-bin/index.sh
-21. Untuk keamanan pastikan akun root dibuat terlebih dahulu agar password root tidak tertimpa atau dibypass, jika ada akun lain database lain punya akses seperti root pastikan juga dibuat terlebih dahulu akunnya.
+18. mkdir /etc/apache2/ssl
+19. chmod 777 /etc/apache2/ssl
+20. service apache2 restart lalu enter
+21. Untuk membuat akun http://ipserver/cgi-bin/index.sh
+22. Untuk keamanan pastikan akun root dibuat terlebih dahulu agar password root tidak tertimpa atau dibypass, jika ada akun lain database lain punya akses seperti root pastikan juga dibuat terlebih dahulu akunnya.
 
 Licensi
 -------
