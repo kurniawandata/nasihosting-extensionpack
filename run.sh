@@ -3,7 +3,7 @@ echo "Content-type: text/html"
 echo ""
 name=`echo "$QUERY_STRING" | awk '{split($0,array,"&")} END{print array[1]}' | awk '{split($0,array,"=")} END{print array[2]}'`
 password=`echo "$QUERY_STRING" | awk '{split($0,array,"&")} END{print array[2]}' | awk '{split($0,array,"=")} END{print array[2]}'`
-if [ -z "$(ls -A /home/$name/config.php)" ]; then
+if [ -z "$(ls -A /home/$name)" ]; then
 sudo mkdir /home/$name
 sudo cp /home/nasihosting-extensionpack/filemanager/* /home/$name
 sudo chmod 777 /home/$name
