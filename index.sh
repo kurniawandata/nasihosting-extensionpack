@@ -1,27 +1,4 @@
 #!/bin/bash
-echo "Content-type: text/html"
-echo ""
-cat <<EOT
-<!DOCTYPE html>
-<html>
-<head>
-        <title>Daftar nasihosting</title>
-</head>
-<body>
-        <p>Silahkan masukkan nama subdomain dan password, password yang dimasukkan hanya mendukung huruf dan angka</p>
-        <form action="run.sh" method="get">
-                <label>Nama Sub domain</label>
-                <input type="text" name="name">.nasihosting.com
-                <br>
-                <label>Password</label>
-                <input type="password" name="password">
-                <br>
-                <button type="submit">OK</button>
-        </form>
-</body>
-</html>
-EOT
-#!/bin/bash
 #Desain front end halaman login ini dibuat oleh awan - e-mail: hermawan9815@gmail.com , untuk back end oleh kurniawan - e-mail: kurniawanajazenfone@gmail.com
 echo "Content-type: text/html"
 echo ""
