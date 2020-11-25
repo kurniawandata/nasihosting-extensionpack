@@ -1,5 +1,5 @@
 #!/bin/bash
-#Desain front end halaman login ini dibuat oleh awan - e-mail: hermawan9815@gmail.com , untuk back end oleh kurniawan - e-mail: kurniawanajazenfone@gmail.com
+#Desain front end halaman login ini dibuat oleh awan - e-mail: hermawan9815@gmail.com, untuk back end oleh kurniawan - e-mail: kurniawanajazenfone@gmail.com
 echo "Content-type: text/html"
 echo ""
 cat <<EOT
