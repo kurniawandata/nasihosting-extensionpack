@@ -1,11 +1,13 @@
 # nasihosting-extensionpack
 
 
-Nasihosting Extension Pack v1.0 Beta 10
+Nasihosting Extension Pack v1.0 Full version
 --------------------
 ![alt text](http://xcode.or.id/04_small-logo.png)
 
 Script untuk membangun hosting otomatis dari sisi client, pemilik hosting cukup tugasnya mengarahkan subdomain dari cloudflare
+
+Versi beta terakhir adalah Beta 10
 
 Cara menggunakan Nasihosting-ExtensionPack
 ------------------------------------------
