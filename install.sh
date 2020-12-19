@@ -1,6 +1,9 @@
 echo "=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-="
 echo "Instalasi Nasihosting-Extensionpack   "
 echo "=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-="
+echo -n "Masukkan nama domain : "
+read domain
+sed -i "s/nasihosting.com/$domain/g" index.html
 sudo a2enmod cgi
 sudo service apache2 restart
 sudo index.html /var/www/html
