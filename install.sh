@@ -5,6 +5,7 @@ echo -n "Masukkan nama domain : "
 read domain
 sed -i "s/nasihosting.com/$domain/g" index.html
 sed -i "s/nasihosting.com/$domain/g" index.sh
+sed -i "s/nasihosting.com/$domain/g" support/subdomain.conf
 sudo mkdir /home/root
 sudo touch /home/root/locked
 sudo a2enmod cgi
