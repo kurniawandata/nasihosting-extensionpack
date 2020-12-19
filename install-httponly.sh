@@ -12,9 +12,9 @@ sudo touch /home/root/locked
 sudo a2enmod cgi
 sudo service apache2 restart
 sudo mv /var/www/html/index.html /var/www/html/backup
-sudo cp index.html /var/www/html
-sudo cp index.sh /usr/lib/cgi-bin
-sudo cp run.sh /usr/lib/cgi-bin
+sudo cp index2.html /var/www/html
+sudo cp index-httponly.sh /usr/lib/cgi-bin
+sudo cp run-httponly.sh /usr/lib/cgi-bin
 sudo chmod 777 /usr/lib/cgi-bin
 sudo chmod 777 /usr/lib/cgi-bin/*
 sudo chmod 777 /home
