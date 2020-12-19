@@ -4,6 +4,7 @@ echo "=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-="
 echo -n "Masukkan nama domain : "
 read domain
 sed -i "s/nasihosting.com/$domain/g" index.html
+sed -i "s/nasihosting.com/$domain/g" index.sh
 sudo a2enmod cgi
 sudo service apache2 restart
 sudo index.html /var/www/html
