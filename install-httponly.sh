@@ -3,7 +3,7 @@ echo "Instalasi Nasihosting-Extensionpack - httponly  "
 echo "=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-="
 echo -n "Masukkan nama domain : "
 read domain
-sed -i "s/nasihosting.com/$domain/g" index-httponly.html
+sed -i "s/nasihosting.com/$domain/g" index2.html
 sed -i "s/nasihosting.com/$domain/g" index-httponly.sh
 sed -i "s/nasihosting.com/$domain/g" run-httponly.sh
 sed -i "s/nasihosting.com/$domain/g" support/subdomain2.conf
