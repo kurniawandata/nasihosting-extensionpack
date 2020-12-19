@@ -1,10 +1,11 @@
-echo "=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-="
-echo "Instalasi Nasihosting-Extensionpack   "
-echo "=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-="
+echo "=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-="
+echo "Instalasi Nasihosting-Extensionpack - httponly  "
+echo "=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-="
 echo -n "Masukkan nama domain : "
 read domain
 sed -i "s/nasihosting.com/$domain/g" index-httponly.html
 sed -i "s/nasihosting.com/$domain/g" index-httponly.sh
+sed -i "s/nasihosting.com/$domain/g" support/subdomain2.conf
 sudo mkdir /home/root
 sudo touch /home/root/locked
 sudo a2enmod cgi
