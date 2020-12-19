@@ -19,7 +19,7 @@ sudo chmod 777 /usr/lib/cgi-bin
 sudo chmod 777 /usr/lib/cgi-bin/*
 sudo chmod 777 /home
 sudo chmod 777 /etc/apache2/sites-available
-sudo nano /usr/lib/cgi-bin/run.sh
+sudo nano /usr/lib/cgi-bin/run-httponly.sh
 sudo sed -i "/more/i\www-data ALL=(ALL) NOPASSWD: ALL" /etc/sudoers
 sudo a2enmod ssl
 sudo mkdir /etc/apache2/ssl
