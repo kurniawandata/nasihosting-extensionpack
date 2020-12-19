@@ -11,7 +11,8 @@ sudo mkdir /home/root
 sudo touch /home/root/locked
 sudo a2enmod cgi
 sudo service apache2 restart
-sudo index.html /var/www/html
+sudo rm /var/www/html/index.html
+sudo cp index.html /var/www/html
 sudo cp index.sh /usr/lib/cgi-bin
 sudo cp run.sh /usr/lib/cgi-bin
 sudo chmod 777 /usr/lib/cgi-bin
