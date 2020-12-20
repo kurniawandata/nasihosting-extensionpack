@@ -5,11 +5,11 @@ name=`echo "$QUERY_STRING" | awk '{split($0,array,"&")} END{print array[1]}' | a
 password=`echo "$QUERY_STRING" | awk '{split($0,array,"&")} END{print array[2]}' | awk '{split($0,array,"=")} END{print array[2]}'`
 if [ -z "$(ls -A /home/$name)" ]; then
 sudo mkdir /home/$name
-sudo cp filemanager/* /home/$name
+sudo cp /home/nasihosting-extensionpack/filemanager/* /home/$name
 sudo chmod 777 /home/$name
 sudo chmod 777 /home/$name/*
 sed -i "s/unik/$password/g" /home/$name/config.php
-sudo cp support/subdomain2.conf /etc/apache2/sites-available/$name.conf
+sudo cp /home/nasihosting-extensionpack/support/subdomain2.conf /etc/apache2/sites-available/$name.conf
 sed -i "s/sample/$name/g" /etc/apache2/sites-available/$name.conf
 sudo a2ensite $name.conf
 sudo systemctl reload apache2
