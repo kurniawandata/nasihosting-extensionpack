@@ -3,10 +3,13 @@ echo "Instalasi Nasihosting-Extensionpack - httponly  "
 echo "=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-="
 echo -n "Masukkan nama domain : "
 read domain
+echo -n "Masukkan password root MySQL : "
+read passwordmysql
 sed -i "s/nasihosting.com/$domain/g" index2.html
 sed -i "s/nasihosting.com/$domain/g" index-httponly.sh
 sed -i "s/nasihosting.com/$domain/g" run-httponly.sh
 sed -i "s/nasihosting.com/$domain/g" support/subdomain2.conf
+sed -i "s/passwordmysql/$passwordmysql/g" run-httponly.conf
 sudo mkdir /home/root
 sudo touch /home/root/locked
 sudo a2enmod cgi
@@ -21,7 +24,6 @@ sudo chmod 777 /usr/lib/cgi-bin
 sudo chmod 777 /usr/lib/cgi-bin/*
 sudo chmod 777 /home
 sudo chmod 777 /etc/apache2/sites-available
-sudo nano /usr/lib/cgi-bin/run-httponly.sh
 sudo sed -i "/more/i\www-data ALL=(ALL) NOPASSWD: ALL" /etc/sudoers
 sudo a2enmod ssl
 sudo mkdir /etc/apache2/ssl
