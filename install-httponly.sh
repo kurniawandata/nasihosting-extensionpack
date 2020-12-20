@@ -5,6 +5,7 @@ echo -n "Masukkan nama domain : "
 read domain
 echo -n "Masukkan password root MySQL : "
 read passwordmysql
+passwordmysql="-p$passwordmysql"
 sed -i "s/nasihosting.com/$domain/g" index2.html
 sed -i "s/nasihosting.com/$domain/g" index-httponly.sh
 sed -i "s/nasihosting.com/$domain/g" run-httponly.sh
