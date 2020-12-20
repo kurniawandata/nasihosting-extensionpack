@@ -9,7 +9,7 @@ sed -i "s/nasihosting.com/$domain/g" index2.html
 sed -i "s/nasihosting.com/$domain/g" index-httponly.sh
 sed -i "s/nasihosting.com/$domain/g" run-httponly.sh
 sed -i "s/nasihosting.com/$domain/g" support/subdomain2.conf
-sed -i "s/passwordmysql/$passwordmysql/g" run-httponly.conf
+sudo nano support/subdomain2.conf
 sudo mkdir /home/root
 sudo touch /home/root/locked
 sudo a2enmod cgi
