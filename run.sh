@@ -15,6 +15,8 @@ sudo a2ensite $name.conf
 sudo systemctl reload apache2
 mysql -uroot -ppasswordmysql -e "CREATE DATABASE "$name""
 mysql -uroot -ppasswordmysql -e "GRANT ALL PRIVILEGES ON "$name".* TO "$name"@localhost IDENTIFIED BY '"$password"'"
+mysql -uroot -p$passmysql -e "CREATE USER '$name'@'localhost' IDENTIFIED BY '$password';"
+mysql -uroot -p$passmysql -e "GRANT ALL PRIVILEGES ON $name.* TO '$name'@'localhost' WITH GRANT OPTION;"
 cat <<EOT
 <!DOCTYPE html>
 <html>
