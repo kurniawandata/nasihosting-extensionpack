@@ -5,7 +5,9 @@ Nasihosting Extension Pack v1.1 Full version
 --------------------
 ![alt text](http://xcode.or.id/04_small-logo.png)
 
-Script untuk membangun hosting otomatis dari sisi client, pemilik hosting cukup tugasnya mengarahkan subdomain dari cloudflare
+Hanya mendukung Ubuntu Server 16.04 dan 18.04, untuk untuk Ubuntu 20.04 tidak didukung, jika dipaksakan, maka user tidak bisa login ke phpmyadmin tapi bisa untuk file manager. 
+
+Script untuk membangun hosting otomatis dari sisi client, pemilik hosting cukup tugasnya mengarahkan subdomain dari panel domain / zone editor / cloudflare
 
 Versi beta terakhir adalah Beta 10
 
