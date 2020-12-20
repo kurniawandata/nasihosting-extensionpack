@@ -16,8 +16,8 @@ ExtensionPack hanya boleh dijalankan jika Nasihosting v1.1 sudah aktif dan berja
 2. git clone https://github.com/kurniawandata/nasihosting-extensionpack
 3. cd nasihosting-extensionpack
 4. chmod -R 777 *
-5. ./install-httponly (tanpa https)
-5. ./install-httponly (pakai https, pastikan sertifikat untuk SSL sudah punya)
+5. ./install-httponly.sh (tanpa https)
+5. ./install.sh (pakai https, pastikan sertifikat untuk SSL sudah punya)
 
 
 Licensi
