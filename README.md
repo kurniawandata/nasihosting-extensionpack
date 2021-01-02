@@ -1,7 +1,7 @@
 # nasihosting-extensionpack
 
 
-Nasihosting Extension Pack v1.1 Full version
+Nasihosting Extension Pack v1.2 Full version
 --------------------
 ![alt text](http://xcode.or.id/04_small-logo.png)
 
@@ -13,7 +13,7 @@ Versi beta terakhir adalah Beta 10
 
 Cara menggunakan Nasihosting-ExtensionPack
 ------------------------------------------
-ExtensionPack hanya boleh dijalankan jika Nasihosting v1.1 sudah aktif dan berjalan normal di server
+ExtensionPack hanya boleh dijalankan jika Nasihosting v1.2 sudah aktif dan berjalan normal di server
 1. cd /home (harus di /home)
 2. git clone https://github.com/kurniawandata/nasihosting-extensionpack
 3. cd nasihosting-extensionpack
@@ -21,6 +21,9 @@ ExtensionPack hanya boleh dijalankan jika Nasihosting v1.1 sudah aktif dan berja
 5. ./install-httponly.sh (tanpa https)
 5. ./install.sh (pakai https, pastikan sertifikat untuk SSL sudah punya)
 
+Ganti domain
+------------
+./gantidomain.sh
 
 Licensi
 -------
