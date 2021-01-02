@@ -23,7 +23,8 @@ ExtensionPack hanya boleh dijalankan jika Nasihosting v1.2 sudah aktif dan berja
 
 Ganti domain
 ------------
-./gantidomain.sh
+./gantidomain.sh (mendukung https)
+./gantidomain-httponly.sh (hanya mendukung http)
 
 Licensi
 -------
