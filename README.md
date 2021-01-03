@@ -13,7 +13,7 @@ Versi beta terakhir adalah Beta 10
 
 Cara menggunakan Nasihosting-ExtensionPack
 ------------------------------------------
-ExtensionPack hanya boleh dijalankan jika Nasihosting v1.2 sudah aktif dan berjalan normal di server
+ExtensionPack hanya boleh dijalankan jika Nasihosting v2.7.2 sudah aktif dan berjalan normal di server
 1. cd /home (harus di /home)
 2. git clone https://github.com/kurniawandata/nasihosting-extensionpack
 3. cd nasihosting-extensionpack
