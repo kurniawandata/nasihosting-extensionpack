@@ -21,7 +21,7 @@ ExtensionPack hanya boleh dijalankan jika Nasihosting v2.7.2 sudah aktif dan ber
 5. ./install-httponly.sh (tanpa https)
 5. ./install.sh (pakai https, pastikan sertifikat untuk SSL sudah punya)
 
-Ganti domain
+Ganti domain utama
 ------------
 ./gantidomain.sh (mendukung https)
 
