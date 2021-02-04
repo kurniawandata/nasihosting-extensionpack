@@ -1,5 +1,6 @@
 #!/bin/bash
 #Desain front end halaman login ini dibuat oleh awan - e-mail: hermawan9815@gmail.com, untuk back end oleh kurniawan - e-mail: kurniawanajazenfone@gmail.com
+#pattern dan title dibuat oleh Aziz Alfian - https://github.com/aalfiann
 echo "Content-type: text/html"
 echo ""
 cat <<EOT
@@ -68,14 +69,14 @@ cat <<EOT
                     <tr>
                         <td>Nama Sub domain : </td>
                         <td>
-                            <input type="text" name="name">.nasihosting.com
+                            <input type="text" name="name" pattern="^[a-zA-Z0-9]+$"  title="Subdomain jangan pakai tanda - dan .">.nasihosting.com
                         </td>
                     </tr>
                     
                     <tr>
                         <td>Password : </td>
                         <td>
-                            <input type="password" name="password" class="form-control">
+                            <input type="password" name="password" pattern="^[a-zA-Z0-9]+$" title="Password hanya mendukung huruf dan angka." class="form-control">
                         </td>
                     </tr>
                     
