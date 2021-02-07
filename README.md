@@ -22,7 +22,7 @@ ExtensionPack hanya boleh dijalankan jika Nasihosting v2.7.2 sudah aktif dan ber
 
 Untuk point 7, jika ingin aktivasi manual, tidak otomatis maka hapus kode sumber di bawah ini :
 
-Kode sumber yang dihapus pada file aktivasi3.sh, jika tidak ingin aktivasi otomatis
+Kode sumber yang dihapus pada file aktivasi3.sh, jika tidak ingin aktivasi otomatis (Aktivasi manual)
 -------------
 sudo cp /usr/lib/cgi-bin/aktivasi3.sh aktivasi4.sh
 sed -i "s/unik/$name/g" /usr/lib/cgi-bin/aktivasi4.sh
