@@ -9,6 +9,7 @@ passwordmysql="-p$passwordmysql"
 sed -i "s/nasihosting.com/$domain/g" index2.html
 sed -i "s/nasihosting.com/$domain/g" index-httponly.sh
 sed -i "s/nasihosting.com/$domain/g" run-httponly.sh
+sed -i "s/nasihosting.com/$domain/g" aktivasi3.sh
 sed -i "s/nasihosting.com/$domain/g" support/subdomain2.conf
 sed -i "s/-ppasswordmysql/$passwordmysql/g" run-httponly.sh
 sudo mkdir /home/root
