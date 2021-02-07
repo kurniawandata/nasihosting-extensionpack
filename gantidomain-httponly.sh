@@ -6,6 +6,7 @@ sed -i "s/$domainlama/$domainbaru/g" index2.html
 sed -i "s/$domainlama/$domainbaru/g" /var/www/html/index.html
 sed -i "s/$domainlama/$domainbaru/g" /usr/lib/cgi-bin/index-httponly.sh
 sed -i "s/$domainlama/$domainbaru/g" /usr/lib/cgi-bin/run-httponly.sh
+sed -i "s/$domainlama/$domainbaru/g" /usr/lib/cgi-bin/aktivasi3.sh
 sed -i "s/$domainlama/$domainbaru/g" index-httponly.sh
 sed -i "s/$domainlama/$domainbaru/g" run-httponly.sh
 sed -i "s/$domainlama/$domainbaru/g" support/subdomain2.conf
