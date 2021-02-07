@@ -7,9 +7,7 @@ Nasihosting Extension Pack 2.0 Full version
 
 Hanya mendukung Ubuntu Server 16.04 dan 18.04, untuk untuk Ubuntu 20.04 tidak didukung, jika dipaksakan, maka user tidak bisa login ke phpmyadmin tapi bisa untuk file manager. 
 
-Script untuk membangun hosting otomatis dari sisi client, pemilik hosting cukup tugasnya mengarahkan subdomain dari panel domain / zone editor / cloudflare
-
-Versi beta terakhir adalah Beta 10
+Script untuk membangun hosting yang berjalan otomatis dari sisi client, subdomain langsung aktif dan bisa langsung dipakai. 
 
 Cara menggunakan Nasihosting-ExtensionPack
 ------------------------------------------
@@ -21,6 +19,16 @@ ExtensionPack hanya boleh dijalankan jika Nasihosting v2.7.2 sudah aktif dan ber
 5. ./install-httponly.sh (tanpa https)
 6. ./install.sh (pakai https, pastikan sertifikat untuk SSL sudah punya)
 7. Edit aktivasi3.sh, sesuaikan dengan setting di akun cloudflare
+
+Untuk point 7, jika ingin aktivasi manual, tidak otomatis maka hapus kode sumber di bawah ini :
+
+Kode sumber yang dihapus pada file aktivasi3.sh, jika tidak ingin aktivasi otomatis
+-------------
+sudo cp /usr/lib/cgi-bin/aktivasi3.sh aktivasi4.sh
+sed -i "s/unik/$name/g" /usr/lib/cgi-bin/aktivasi4.sh
+chmod 777 aktivasi4.sh
+./aktivasi4.sh
+rm aktivasi4.sh
 
 Ganti domain utama
 ------------
