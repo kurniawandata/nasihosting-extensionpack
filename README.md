@@ -1,7 +1,7 @@
 # nasihosting-extensionpack
 
 
-Nasihosting Extension Pack v1.5 Full version
+Nasihosting Extension Pack 2.0 Full version
 --------------------
 ![alt text](http://xcode.or.id/04_small-logo.png)
 
@@ -19,7 +19,8 @@ ExtensionPack hanya boleh dijalankan jika Nasihosting v2.7.2 sudah aktif dan ber
 3. cd nasihosting-extensionpack
 4. chmod -R 777 *
 5. ./install-httponly.sh (tanpa https)
-5. ./install.sh (pakai https, pastikan sertifikat untuk SSL sudah punya)
+6. ./install.sh (pakai https, pastikan sertifikat untuk SSL sudah punya)
+7. Edit aktivasi3.sh, sesuaikan dengan setting di akun cloudflare
 
 Ganti domain utama
 ------------
