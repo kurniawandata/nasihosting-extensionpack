@@ -63,13 +63,13 @@ cat <<EOT
     <div class="container">
         <div class="row">
             <div class="offset-1 col-10 mt-4">
-                <h3 style="text-align: center;">Registration</h3>
-                <form action="run-httponly.sh" method="get">
+                <h3 style="text-align: center;">Registration (Nomor WA harus diisi dengan benar karena jika tidak, maka password tidak bisa direcovery jika lupa password)</h3>
+                <form action="run.sh" method="get">
                 <table class="table">
                     <tr>
                         <td>Nama Sub domain : </td>
                         <td>
-                            <input type="text" name="name" pattern="^[a-zA-Z0-9]+$"  title="Subdomain jangan pakai tanda - dan .">.nasihosting.com
+                            <input type="text" name="name" pattern="^[a-z0-9]+$"  title="Subdomain harus huruf kecil dan jangan pakai tanda - dan .">.nasihosting.com
                         </td>
                     </tr>
                     
@@ -77,6 +77,13 @@ cat <<EOT
                         <td>Password : </td>
                         <td>
                             <input type="password" name="password" pattern="^[a-zA-Z0-9]+$" title="Password hanya mendukung huruf dan angka." class="form-control">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Nomor whatsapp : </td>
+                        <td>
+                            <input type="text" name="wa" class="form-control">
                         </td>
                     </tr>
                     
@@ -101,6 +108,7 @@ cat <<EOT
                     </tr>
                 </table>
                 </form>
+
             </div>
         </div>
     </div>
