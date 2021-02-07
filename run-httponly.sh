@@ -30,14 +30,14 @@ cat <<EOT
 </head>
 <body>
 <h2>Welcome $name </h1>
-Alamat website anda : https://$name.nasihosting.com <br />
-Login : https://$name.nasihosting.com/login.php<br />
+Alamat website anda : http://$name.nasihosting.com <br />
+Login : http://$name.nasihosting.com/login.php<br />
 Username : admin<br />
 Password : $password<br />
 Cara ganti password edit pada bagian config.php, cari password anda dan ganti dengan password yang baru<br />
 <br />
 Login phpmyadmin<br />
-Login : https://$name.nasihosting.com/phpmyadmin<br />
+Login : http://$name.nasihosting.com/phpmyadmin<br />
 Username : $name <br />
 Password : $password <br />
 <br />
