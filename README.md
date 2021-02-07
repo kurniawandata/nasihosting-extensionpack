@@ -11,7 +11,7 @@ Script untuk membangun hosting yang berjalan otomatis dari sisi client, subdomai
 
 Cara menggunakan Nasihosting-ExtensionPack
 ------------------------------------------
-ExtensionPack hanya boleh dijalankan jika Nasihosting v2.7.2 sudah aktif dan berjalan normal di server
+ExtensionPack hanya boleh dijalankan jika Nasihosting v3.1 sudah aktif dan berjalan normal di server
 1. cd /home (harus di /home)
 2. git clone https://github.com/kurniawandata/nasihosting-extensionpack
 3. cd nasihosting-extensionpack
