@@ -25,9 +25,13 @@ Untuk point 7, jika ingin aktivasi manual, tidak otomatis maka hapus kode sumber
 Kode sumber yang dihapus pada file aktivasi3.sh, jika tidak ingin aktivasi otomatis (Aktivasi manual)
 -------------
 sudo cp /usr/lib/cgi-bin/aktivasi3.sh aktivasi4.sh
+
 sed -i "s/unik/$name/g" /usr/lib/cgi-bin/aktivasi4.sh
+
 chmod 777 aktivasi4.sh
+
 ./aktivasi4.sh
+
 rm aktivasi4.sh
 
 Ganti domain utama
