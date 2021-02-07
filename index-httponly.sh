@@ -64,7 +64,7 @@ cat <<EOT
         <div class="row">
             <div class="offset-1 col-10 mt-4">
                 <h3 style="text-align: center;">Registration (Nomor WA harus diisi dengan benar karena jika tidak, maka password tidak bisa direcovery jika lupa password)</h3>
-                <form action="run.sh" method="get">
+                <form action="run-httponly.sh" method="get">
                 <table class="table">
                     <tr>
                         <td>Nama Sub domain : </td>
