@@ -8,5 +8,6 @@ sed -i "s/$domainlama/$domainbaru/g" /usr/lib/cgi-bin/index.sh
 sed -i "s/$domainlama/$domainbaru/g" /usr/lib/cgi-bin/run.sh
 sed -i "s/$domainlama/$domainbaru/g" index.sh
 sed -i "s/$domainlama/$domainbaru/g" run.sh
+sed -i "s/$domainlama/$domainbaru/g" aktivasi3.sh
 sed -i "s/$domainlama/$domainbaru/g" support/subdomain.conf
 service apache2 restart
