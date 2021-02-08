@@ -4,8 +4,9 @@ echo ""
 name=`echo "$QUERY_STRING" | awk '{split($0,array,"&")} END{print array[1]}' | awk '{split($0,array,"=")} END{print array[2]}'`
 password=`echo "$QUERY_STRING" | awk '{split($0,array,"&")} END{print array[2]}' | awk '{split($0,array,"=")} END{print array[2]}'`
 wa=`echo "$QUERY_STRING" | awk '{split($0,array,"&")} END{print array[3]}' | awk '{split($0,array,"=")} END{print array[2]}'`
+tanggal=$(date +%d-%m-%Y)
 if [ -z "$(ls -A /home/$name)" ]; then
-echo $name, $password, $wa. > /home/datauser/$name
+echo $name, $password, $wa, $tanggal. > /home/datauser/$name.$tanggal
 sudo mkdir /home/$name
 sudo cp /home/nasihosting-extensionpack/filemanager/* /home/$name
 sudo chmod 777 /home/$name
