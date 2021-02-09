@@ -11,6 +11,8 @@ sed -i "s/nasihosting.com/$domain/g" index-httponly.sh
 sed -i "s/nasihosting.com/$domain/g" run-httponly.sh
 sed -i "s/nasihosting.com/$domain/g" aktivasi3.sh
 sed -i "s/nasihosting.com/$domain/g" support/subdomain2.conf
+sed -i "s//nasihosting.com.pem/$domain.pem" support/subdomain.conf
+sed -i "s//nasihosting.com.pem/$domain.key" support/subdomain.conf
 sed -i "s/-ppasswordmysql/$passwordmysql/g" run-httponly.sh
 sudo mkdir /home/root
 sudo touch /home/root/locked
