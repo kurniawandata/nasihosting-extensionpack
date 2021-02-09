@@ -26,6 +26,7 @@ sudo cp index2.html /var/www/html/index.html
 sudo chmod 777 /var/www/html/index.html
 sudo cp index-httponly.sh /usr/lib/cgi-bin
 sudo cp run-httponly.sh /usr/lib/cgi-bin
+sudo cp aktivasi3.sh /usr/lib/cgi-bin
 sudo chmod 777 /usr/lib/cgi-bin
 sudo chmod 777 /usr/lib/cgi-bin/*
 sudo chmod 777 /home
