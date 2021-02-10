@@ -40,6 +40,12 @@ Ganti domain utama
 
 ./gantidomain-httponly.sh (hanya mendukung http)
 
+
+Melihat subdomain user, password dan tanggal dibuat
+------------
+/home/datauser
+
+
 Licensi
 -------
 GNU General Public License v3
