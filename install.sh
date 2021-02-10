@@ -12,8 +12,8 @@ sed -i "s/nasihosting.com/$domain/g" index.sh
 sed -i "s/nasihosting.com/$domain/g" run.sh
 sed -i "s/nasihosting.com/$domain/g" aktivasi3.sh
 sed -i "s/nasihosting.com/$domain/g" support/subdomain.conf
-sed -i "s/$domain.pem/nasihosting.com.pem" support/subdomain.conf
-sed -i "s/$domain.key/nasihosting.com.key" support/subdomain.conf
+sed -i "s/$domain.pem/nasihosting.com.pem/g" support/subdomain.conf
+sed -i "s/$domain.key/nasihosting.com.key/g" support/subdomain.conf
 sed -i "s/-ppasswordmysql/$passwordmysql/g" run.sh
 sudo nano support/subdomain.conf
 sudo mkdir /home/root
