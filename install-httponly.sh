@@ -14,6 +14,10 @@ sed -i "s/nasihosting.com/$domain/g" support/subdomain2.conf
 sed -i "s/-ppasswordmysql/$passwordmysql/g" run-httponly.sh
 sudo mkdir /home/root
 sudo touch /home/root/locked
+sudo mkdir /home/pma
+sudo touch /home/pma/locked
+sudo mkdir /home/www
+sudo touch /home/www/locked
 sudo mkdir /home/datauser
 sudo chmod 777 /home/datauser
 sudo a2enmod cgi
