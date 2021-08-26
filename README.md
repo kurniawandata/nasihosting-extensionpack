@@ -1,7 +1,7 @@
 # nasihosting-extensionpack
 
 
-Nasihosting Extension Pack 3.0 Full version
+Nasihosting Extension Pack 3.1 Full version
 --------------------
 ![alt text](http://xcode.or.id/04_small-logo.png)
 
