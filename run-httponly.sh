@@ -5,6 +5,15 @@ name=`echo "$QUERY_STRING" | awk '{split($0,array,"&")} END{print array[1]}' | a
 password=`echo "$QUERY_STRING" | awk '{split($0,array,"&")} END{print array[2]}' | awk '{split($0,array,"=")} END{print array[2]}'`
 wa=`echo "$QUERY_STRING" | awk '{split($0,array,"&")} END{print array[3]}' | awk '{split($0,array,"=")} END{print array[2]}'`
 tanggal=$(date +%d-%m-%Y)
+if [[ "${name}" =~ [^a-z0-9] ]]; then
+echo "Username hanya boleh huruf dan angka"
+else
+if [[ "${password}" =~ [^a-z0-9] ]]; then
+echo "Password hanya boleh huruf dan angka"
+else
+if [[ "${wa}" =~ [^a-z0-9] ]]; then
+echo "Nomor WA hanya boleh angka"
+else
 if [ -z "$(ls -A /home/$name)" ]; then
 echo $name, $password, $wa, $tanggal. > /home/datauser/$name.$tanggal
 sudo mkdir /home/$name
@@ -50,4 +59,6 @@ File login.php dan config.php tidak boleh dihapus.
 EOT
 else
 echo "Subdomain yang anda masukkan sudah ada pemiliknya"
+fi
+fi
 fi
