@@ -46,7 +46,7 @@ Versi 1.x : Pak Josua RCE bug - PHP 7.2 & others (Sudah dipatch)
 
 Versi 2.x : Anon7 RCE bug - PHP 7.4.12 (Sudah dipatch)
 
-Versi 3.1 : Anon7 Directory Traversal (Sudah dipatch)
+Versi 3.1 : Anon7 Directory Traversal bug (Sudah dipatch)
 
 
 Licensi
