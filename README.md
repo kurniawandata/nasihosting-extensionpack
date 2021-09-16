@@ -40,6 +40,12 @@ Ganti domain utama
 
 ./gantidomain-httponly.sh (hanya mendukung http)
 
+Penemu bug
+----------
+Versi 1.x : Pak Josua RCE bug - PHP 7.3 & others
+Versi 2.x : Anon7 RCE bug - PHP 7.4.12
+Versi 3.1 : Anon7 Directory Traversal
+
 
 Melihat subdomain user, password dan tanggal dibuat
 ------------
