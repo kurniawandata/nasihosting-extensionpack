@@ -3,6 +3,7 @@
 #pattern dan title dibuat oleh Aziz Alfian - https://github.com/aalfiann
 echo "Content-type: text/html"
 echo ""
+menit=$(date +"%M")
 cat <<EOT
 <!DOCTYPE html>
 <html>
@@ -79,7 +80,7 @@ cat <<EOT
                             <input type="password" name="password" pattern="^[a-zA-Z0-9]+$" title="Password hanya mendukung huruf dan angka." class="form-control">
                         </td>
                     </tr>
-
+                            <input type="hidden" name="menit" pattern="^[a-zA-Z0-9]+$" value=$menit title="Batas waktu 1 menit atau kurang." class="form-control">
                     <tr>
                         <td>Nomor whatsapp : </td>
                         <td>
