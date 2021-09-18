@@ -1,7 +1,7 @@
 # nasihosting-extensionpack
 
 
-Nasihosting Extension Pack 3.2 Full version
+Nasihosting Extension Pack 3.3 Full version
 --------------------
 ![alt text](http://xcode.or.id/04_small-logo.png)
 
@@ -48,7 +48,9 @@ Versi 1.x - 2.x : Anon7 RCE bug - PHP 7.4.12 (Sudah dipatch)
 
 Versi 1.x - 3.1 : Anon7 Directory Traversal bug (Sudah dipatch)
 
-Versi saat ini 3.2, sudah dipatch.
+Versi 3.2, sudah dipatch.
+
+Untuk keamanan spam sudah dilakukan minimalisir memanfaatkan pengecekan waktu menit di index.sh dan run.sh, jika tidak sama maka akan diminta untuk registrasi akun lagi. Keamanan ini sudah diterapkan di Versi 3.3.
 
 Licensi
 -------
