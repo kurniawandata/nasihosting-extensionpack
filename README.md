@@ -50,7 +50,7 @@ Versi 1.x - 3.1 : Anon7 Directory Traversal bug (Sudah dipatch)
 
 Versi 3.2, sudah dipatch.
 
-Untuk keamanan spam sudah dilakukan minimalisir memanfaatkan pengecekan waktu menit di index.sh dan run.sh, jika tidak sama maka akan diminta untuk registrasi akun lagi. Keamanan ini sudah diterapkan di Versi 3.3.
+Untuk keamanan dari serangan spam sudah dilakukan minimalisir memanfaatkan pengecekan waktu menit di index.sh dan run.sh, jika tidak sama maka akan diminta untuk registrasi akun lagi. Keamanan ini sudah diterapkan di Versi 3.3.
 
 Licensi
 -------
