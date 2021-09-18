@@ -67,3 +67,4 @@ echo "Subdomain yang anda masukkan sudah ada pemiliknya"
 fi
 fi
 fi
+fi
