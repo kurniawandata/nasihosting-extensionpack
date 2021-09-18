@@ -42,13 +42,11 @@ Ganti domain utama
 
 Penemu bug
 ----------
-Versi 1.x : Pak Josua RCE bug - PHP 7.2 & others (Sudah dipatch)
+Versi 1.x : Pak Josua RCE bug - PHP 7.2 & others (Sudah dipatch sejak di nasihosting core versi 2.x)
 
-Versi 1.x - 2.x : Anon7 RCE bug - PHP 7.4.12 (Sudah dipatch)
+Versi 1.x - 2.x : Anon7 RCE bug - PHP 7.4.12 (Sudah dipatch sejak di nasihosting core versi 3.3)
 
-Versi 1.x - 3.1 : Anon7 Directory Traversal bug (Sudah dipatch)
-
-Versi 3.2, sudah dipatch.
+Versi 1.x - 3.1 : Anon7 Directory Traversal bug (Sudah dipatch dipatch di nasihosting-extension pack sejak versi 3.2)
 
 Untuk keamanan dari serangan spam sudah dilakukan minimalisir memanfaatkan pengecekan waktu menit di index.sh dan run.sh, jika tidak sama maka akan diminta untuk registrasi akun lagi. Keamanan ini sudah diterapkan di Versi 3.3.
 
