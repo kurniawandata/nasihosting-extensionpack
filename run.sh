@@ -3,8 +3,13 @@ echo "Content-type: text/html"
 echo ""
 name=`echo "$QUERY_STRING" | awk '{split($0,array,"&")} END{print array[1]}' | awk '{split($0,array,"=")} END{print array[2]}' | tr [:upper] [:lower:]`
 password=`echo "$QUERY_STRING" | awk '{split($0,array,"&")} END{print array[2]}' | awk '{split($0,array,"=")} END{print array[2]}'`
-wa=`echo "$QUERY_STRING" | awk '{split($0,array,"&")} END{print array[3]}' | awk '{split($0,array,"=")} END{print array[2]}'`
+menit=`echo "$QUERY_STRING" | awk '{split($0,array,"&")} END{print array[3]}' | awk '{split($0,array,"=")} END{print array[2]}'`
+wa=`echo "$QUERY_STRING" | awk '{split($0,array,"&")} END{print array[4]}' | awk '{split($0,array,"=")} END{print array[2]}'`
 tanggal=$(date +%d-%m-%Y)
+jam=$(date +"%M")
+if [[ "$menit" != "$jam" ]]; then 
+echo "Waktu tidak sama, silahkan diulangi lagi, batas waktu 1 menit atau kurang"
+else
 if [[ "${name}" =~ [^a-z0-9] ]]; then
 echo "Username hanya boleh huruf dan angka"
 else
@@ -63,3 +68,5 @@ fi
 fi
 fi
 fi
+fi
+
