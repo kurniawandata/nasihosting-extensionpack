@@ -5,6 +5,8 @@ Nasihosting Extension Pack 5.0 Full version
 --------------------
 ![alt text](http://xcode.or.id/04_small-logo.png)
 
+Versi 5.0 sudah mendukung keamanan captcha gambar yang algoritma dan pemrogramannya dibuat sendiri oleh Kurniawan
+
 Hanya mendukung Ubuntu Server 16.04 dan 18.04, untuk untuk Ubuntu 20.04 tidak didukung, jika dipaksakan, maka user tidak bisa login ke phpmyadmin tapi bisa untuk file manager. 
 
 Script untuk membangun hosting yang berjalan otomatis dari sisi client, subdomain langsung aktif dan bisa langsung dipakai. 
