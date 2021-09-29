@@ -1,17 +1,26 @@
 #!/bin/bash
-#Desain front end halaman login ini dibuat oleh awan - e-mail: hermawan9815@gmail.com, untuk back end oleh kurniawan - e-mail: kurniawanajazenfone@gmail.com
-#pattern dan title dibuat oleh Aziz Alfian - https://github.com/aalfiann
+#Desain front end halaman login ini dibuat oleh awan - e-mail: hermawan9815@gmail.com , untuk back end oleh kurniawan - e-mail: kurniawanajazenfone@gmail.com
 echo "Content-type: text/html"
 echo ""
-menit=$(date +"%M")
+patch=$(tr -dc A-Za-z0-9 </dev/urandom | head -c 13 ; echo '')
+convert \
+    -size 225x100 \
+    xc:lightblue \
+    -font Bookman-DemiItalic \
+    -pointsize 18 \
+    -fill blue \
+    -gravity center \
+    -draw "text 0,0 '$(cat key.txt)'" \
+    image.png
+convert image.png -background white -wave 4x55 image.png
+sudo cp image.png /var/www/html
 cat <<EOT
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Pendaftaran</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
- <style>
-    .captcha
+    <title>Pendaftaran nasihosting</title>
+     <link rel="stylesheet" href="https://server3.nasihosting.com/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <style>
     { 
         font: bold 16px;
         color:WHITE;
@@ -24,48 +33,12 @@ cat <<EOT
     </style>
 </head>
 <body>
-    <script>        
-        function createCaptcha(){
-            for(i=0; i<6 ; i++){
-                if(i %2 ==0){
-                    captcha[i] = String.fromCharCode(Math.floor((Math.random()*26)+65));
-                }else{      
-                    captcha[i] = Math.floor((Math.random()*10)+0);
-                }
-            }
-            var thecaptcha=captcha.join("");
-            var elm = document.getElementById('captcha');
-            elm.innerHTML="<span class='captcha'> " + thecaptcha+ " </span>" + "&nbsp; <a onclick='createCaptcha()' class='badge badge-warning' href='#'>recaptcha</a>";
-        }
-        var captcha= new Array ();
-
-        function validateRecaptcha(){
-            var recaptcha= document.getElementById("recaptcha").value;;
-            var validRecaptcha=0;
-            for(var j=0; j<6; j++){
-                if(recaptcha.charAt(j)!= captcha[j]){
-                    validRecaptcha++;
-                }
-            }
-            if (recaptcha == ""){
-                document.getElementById('errCaptcha').innerHTML = 'Re-Captcha must be filled';
-                document.getElementById("btnDaftar").disabled = true;
-            } else if (validRecaptcha>0 || recaptcha.length>6){
-                document.getElementById('errCaptcha').innerHTML = 'Sorry, Wrong Re-Captcha';
-                document.getElementById("btnDaftar").disabled = true;
-            } else{
-                document.getElementById('errCaptcha').innerHTML = 'OK';
-                document.getElementById("btnDaftar").disabled = false;
-            }
-        }
-
-        
-    </script>
     <div class="container">
         <div class="row">
             <div class="offset-1 col-10 mt-4">
-                <h3 style="text-align: center;">Registration (Nomor WA harus diisi dengan benar karena jika tidak, maka password tidak bisa direcovery jika lupa password)</h3>
-                <form action="run-httponly.sh" method="get">
+                <h3 style="text-align: center;">Registration Free Hosting</h3>
+<br>
+                <form action="runbaru.sh" method="get">
                 <table class="table">
                     <tr>
                         <td>Nama Sub domain : </td>
@@ -80,40 +53,39 @@ cat <<EOT
                             <input type="password" name="password" pattern="^[a-zA-Z0-9]+$" title="Password hanya mendukung huruf dan angka." class="form-control">
                         </td>
                     </tr>
-                            <input type="hidden" name="menit" pattern="^[a-zA-Z0-9]+$" value=$menit title="Batas waktu 1 menit atau kurang." class="form-control">
+
                     <tr>
                         <td>Nomor whatsapp : </td>
                         <td>
-                            <input type="text" name="wa" class="form-control">
-                        </td>
-                    </tr>
-                    
-                    <tr>
-                        <td>Captcha : </td>
-                        <td id="captcha" colspan="2">
-                            <script> createCaptcha(); </script>
+                            <input type="text" name="wa" pattern="^[0-9]+$" title="Jika nomor whatsapp tidak diisi maka tidak bisa recovery password & sebagainya" class="form-control">
                         </td>
                     </tr>
 
                     <tr>
+                       <td>
+                        Captcha </td>
+                       <td colspan="2"><img src="https://freehacklab.xcode.or.id/image.png?$patch">
+                       </td>
+                        </tr>
+                     <tr>
                         <td>Type Captcha : </td>
                         <td>
-                            <input onkeyup="validateRecaptcha()" type="text" name="recaptcha" id="recaptcha" placeholder="Type the captcha" class="form-control"/>
+                            <input type="text" name="cek" pattern="^[a-zA-Z0-9]+$" title="Captcha." class="form-control">
                         </td>
-                        <td id="errCaptcha" class="errmsg"></td>
                     </tr>
                     <tr>
                         <td colspan="3" style="text-align:right;">
-                            <input disabled id="btnDaftar" type="submit" value="Daftar" class="btn btn-sm btn-primary form-control"/>
+                            <input type="submit" value="Daftar" class="btn btn-sm btn-primary form-control"/>
                         </td>
                     </tr>
                 </table>
                 </form>
-
+Teknologi captcha gambar, filter input hanya mendukung huruf dan angka dibackend dan berbagai proteksinya lainnya dibuat algoritma dan kode sumbernya oleh PT. Kode Keamanan Indonesia. Hosting dan subdomain ini 100% gratis, tidak ada biaya tersembunyi. Nomor WA harus diisi dengan benar karena jika tidak, maka password tidak bisa direcovery jika lupa password.<br><br>
             </div>
         </div>
     </div>
-    
+<br>
+<br>
 </body>
 
 </html>
