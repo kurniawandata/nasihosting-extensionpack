@@ -29,7 +29,7 @@ convert \
     -draw "text 0,0 $acak" \
     image.png
 convert image.png -background white -wave 4x55 image.png
-sudo cp /usr/lib/cgi-bin/image.png /var/www/htm;
+sudo cp /usr/lib/cgi-bin/image.png /var/www/html
 if [[ "${wa}" =~ [^a-z0-9] ]]; then
 echo "Nomor WA hanya boleh angka"
 else
