@@ -1,7 +1,7 @@
 # nasihosting-extensionpack
 
 
-Nasihosting Extension Pack 5.0 Full version
+Nasihosting Extension Pack 5.2 Full version
 --------------------
 ![alt text](http://xcode.or.id/04_small-logo.png)
 
