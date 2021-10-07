@@ -52,6 +52,8 @@ Versi 1.x - 3.1 : Anon7 Directory Traversal bug (Sudah dipatch dipatch di nasiho
 
 Untuk keamanan dari serangan spam sudah dilakukan minimalisir memanfaatkan pengecekan waktu menit di index.sh dan run.sh, jika tidak sama maka akan diminta untuk registrasi akun lagi. Keamanan ini sudah diterapkan di Versi 3.3.
 
+Versi 5.0 : Sudah menggunakan Captcha gambar yang sudah stabil, algoritma keamanan waktu sudah dihapus.
+
 Licensi
 -------
 GNU General Public License v3
