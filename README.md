@@ -50,9 +50,9 @@ Versi 1.x - 2.x : Anon7 RCE bug - PHP 7.4.12 (Sudah dipatch sejak di nasihosting
 
 Versi 1.x - 3.1 : Anon7 Directory Traversal bug (Sudah dipatch dipatch di nasihosting-extension pack sejak versi 3.2)
 
-Versi 1.x - 3.3 : Serangan spam pada input, patch sementara minimalisir memanfaatkan pengecekan waktu menit di index.sh dan run.sh di versi 3.2.
+Versi 1.x - 3.3 : Serangan spam pada input registrasi secara otomatis, patch sementara minimalisir memanfaatkan pengecekan waktu menit di index.sh dan run.sh di versi 3.2.
 
-Mulai versi 5.0 sudah menggunakan Captcha gambar yang sudah stabil untuk menggantikan keamanan yang memanfaatkan pengecekan waktu.
+Mulai versi 5.0 sudah menggunakan Captcha gambar yang sudah stabil untuk menggantikan keamanan yang memanfaatkan pengecekan waktu yang masih bisa dispam otomatis, seiring perkembangan captcha gambar lebih dipersulit untuk membaca huruf.
 
 Licensi
 -------
