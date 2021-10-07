@@ -52,7 +52,7 @@ Versi 1.x - 3.1 : Anon7 Directory Traversal bug (Sudah dipatch dipatch di nasiho
 
 Versi 1.x - 3.3 : Serangan spam pada input, patch sementara minimalisir memanfaatkan pengecekan waktu menit di index.sh dan run.sh di versi 3.2.
 
-Mulai versi 5.0 sudah menggunakan Captcha gambar yang sudah stabil untuk menggantikan kamanan yang memanfaatkan pengecekan waktu.
+Mulai versi 5.0 sudah menggunakan Captcha gambar yang sudah stabil untuk menggantikan keamanan yang memanfaatkan pengecekan waktu.
 
 Licensi
 -------
